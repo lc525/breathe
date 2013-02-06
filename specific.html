@@ -3,19 +3,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Specific Examples Test Suite &mdash; Breathe v0.7.0 documentation</title>
+    <title>Specific Examples Test Suite &mdash; Breathe 0.7.5 documentation</title>
+    
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
     <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     '0.7.0',
+        VERSION:     '0.7.5',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,15 +27,16 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe v0.7.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 0.7.5 documentation" href="index.html" />
     <link rel="up" title="Test Pages" href="testpages.html" />
     <link rel="next" title="Embedded Rst" href="embeddedrst.html" />
     <link rel="prev" title="TinyXML Test Suite" href="tinyxml.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe v0.7.0 documentation</span></a></h1>
+          <span>Breathe 0.7.5 documentation</span></a></h1>
         <h2 class="heading"><span>Specific Examples Test Suite</span></h2>
       </div>
       <div class="topnav">
@@ -54,14 +58,14 @@
 <div class="section" id="typedef-examples">
 <h2>Typedef Examples<a class="headerlink" href="#typedef-examples" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>TypeDefTest</strong></div>
+<div class="line" id=""><span id="project31class_type_def_test"></span><em>class</em> <strong>TypeDefTest</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>typedef.h</strong></div>
+<div class="line" id=""><span id="project31typedef_8h"></span><em>file</em> <strong>typedef.h</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -140,27 +144,37 @@
 </div>
 <div class="section" id="alias-example">
 <h2>Alias Example<a class="headerlink" href="#alias-example" title="Permalink to this headline">¶</a></h2>
-<p id=""><span id="project1alias_8h_1a98fbb400a6ae708a61cc6296ed127cf2"></span><div class="line-block">
-<div class="line">void <strong>frob_foos</strong>(void)</div>
+<p id=""><span id="project1alias_8h_1ad2ab33157d9671ba2215d8d22dac3931"></span><div class="line-block">
+<div class="line">void <strong>frob_foos</strong>(void * Frobs)</div>
 </div>
 </p>
 <blockquote>
 <div><p>Foo frob routine. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Side Effects:</th><td class="field-body">Frobs any foos. </td>
-</tr>
-</tbody>
-</table>
+<p><dl class="docutils">
+<dt><strong>bob this something else</strong></dt>
+<dd></dd>
+<dt><strong>Side Effects</strong></dt>
+<dd>Frobs any foos. </dd>
+<dt><strong>Return</strong></dt>
+<dd>Frobs any foos.</dd>
+<dt><strong>bob this something else</strong></dt>
+<dd></dd>
+<dt><strong>Side Effects</strong></dt>
+<dd>Frobs any foos.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><tt class="first docutils literal"><span class="pre">Frobs</span></tt> - <p>any foos. </p>
+</li>
+</ul>
+</dd>
+</dl>
 </p>
 </div></blockquote>
 </div>
 <div class="section" id="fixed-width-font">
 <h2>Fixed Width Font<a class="headerlink" href="#fixed-width-font" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Out</strong></div>
+<div class="line" id=""><span id="project32class_out"></span><em>class</em> <strong>Out</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -185,6 +199,65 @@
 </div></blockquote>
 </div></blockquote>
 </div>
+<div class="section" id="function-overloads">
+<h2>Function Overloads<a class="headerlink" href="#function-overloads" title="Permalink to this headline">¶</a></h2>
+<p id="f__X.X"><span id="functionOverloadfunction_overload_8h_1aa030ff5bb393649c2bd7fb272fdf481b"></span><div class="line-block">
+<div class="line">void <strong>f</strong>(int, int)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Function which takes two int arguments. </p>
+<p></p>
+</div></blockquote>
+<p id="f__X.X"><span id="functionOverloadfunction_overload_8h_1a2440a06dcf414e402c2bc57618549e64"></span><div class="line-block">
+<div class="line">void <strong>f</strong>(double, double)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Function which takes two double arguments. </p>
+<p></p>
+</div></blockquote>
+<p id="test::g__X.X"><span id="functionOverloadnamespacetest_1a00d1cb2e8775f78b28af92b3e212dc3c"></span><div class="line-block">
+<div class="line">void <strong>g</strong>(int, int)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Another function which takes two int arguments. </p>
+<p></p>
+</div></blockquote>
+<p id="test::g__X.X"><span id="functionOverloadnamespacetest_1a8cf49c64c2984c968e4529ba483fa276"></span><div class="line-block">
+<div class="line">void <strong>g</strong>(double, double)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Another function which takes two double arguments. </p>
+<p></p>
+</div></blockquote>
+<p id="h__X.X"><span id="functionOverloadfunction_overload_8h_1ae84c46627a506599b16741f12e11177d"></span><div class="line-block">
+<div class="line">void <strong>h</strong>(std::string, MyType)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Another function which takes a custom type. </p>
+<p></p>
+</div></blockquote>
+<p id="h__X.X"><span id="functionOverloadfunction_overload_8h_1a684ee1a3f215983fff1b5843867f77dd"></span><div class="line-block">
+<div class="line">void <strong>h</strong>(std::string, MyOtherType)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Another function which takes another custom type. </p>
+<p></p>
+</div></blockquote>
+<p id="h__X.X"><span id="functionOverloadfunction_overload_8h_1a0fb89f331c4e331e1adcceb237804573"></span><div class="line-block">
+<div class="line">void <strong>h</strong>(std::string, int)</div>
+</div>
+</p>
+<blockquote>
+<div><p>Another function which takes a basic type. </p>
+<p></p>
+</div></blockquote>
+</div>
 </div>
 
 
@@ -203,7 +276,7 @@
 
     <div class="footer">
         &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>

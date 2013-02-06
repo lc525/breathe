@@ -3,19 +3,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Directives &amp; Config Variables &mdash; Breathe v0.7.0 documentation</title>
+    <title>Directives &amp; Config Variables &mdash; Breathe 0.7.5 documentation</title>
+    
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
     <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     '0.7.0',
+        VERSION:     '0.7.5',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,14 +27,15 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe v0.7.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 0.7.5 documentation" href="index.html" />
     <link rel="next" title="doxygenfunction Directive Example" href="function.html" />
     <link rel="prev" title="Quickstart" href="quickstart.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe v0.7.0 documentation</span></a></h1>
+          <span>Breathe 0.7.5 documentation</span></a></h1>
         <h2 class="heading"><span>Directives &amp; Config Variables</span></h2>
       </div>
       <div class="topnav">
@@ -161,24 +165,33 @@ It behaves the same as the doxygenstruct directive.</p>
 <div class="section" id="doxygenclass-directive">
 <span id="doxygenclass"></span><h2>doxygenclass Directive<a class="headerlink" href="#doxygenclass-directive" title="Permalink to this headline">¶</a></h2>
 <p>This directive generates the appropriate output for a single class. It takes the
-standard <tt class="docutils literal"><span class="pre">project</span></tt>, <tt class="docutils literal"><span class="pre">path</span></tt>, <tt class="docutils literal"><span class="pre">outline</span></tt> and <tt class="docutils literal"><span class="pre">no-link</span></tt> options and additonally
-<tt class="docutils literal"><span class="pre">members</span></tt> option.</p>
+standard <tt class="docutils literal"><span class="pre">project</span></tt>, <tt class="docutils literal"><span class="pre">path</span></tt>, <tt class="docutils literal"><span class="pre">outline</span></tt> and <tt class="docutils literal"><span class="pre">no-link</span></tt> options and
+additonally <tt class="docutils literal"><span class="pre">members</span></tt> and <tt class="docutils literal"><span class="pre">sections</span></tt> option.</p>
 <dl class="docutils">
 <dt><tt class="docutils literal"><span class="pre">members</span></tt></dt>
 <dd><p class="first">Designed to behavior in a similar manner to the <tt class="docutils literal"><span class="pre">members</span></tt> option for the
 <tt class="docutils literal"><span class="pre">autoclass</span></tt> directive that comes with the Sphinx <tt class="docutils literal"><span class="pre">autodoc</span></tt> extension.</p>
-<p class="last">If you do not specify this option you will not get any information about the
+<p>If you do not specify this option you will not get any information about the
 class members, just the general class documentation. If you provide it
 without arguments, then Breathe adds all the public members and their
-documentation. If you specify it with <strong>comma separated</strong> arguments, then
+documentation.  If you specify it with <strong>comma separated</strong> arguments, then
 Breathe will treat the arguments as names of members and provide
 documentation for only those members that have been named.</p>
+<p class="last">The default behaviour of adding the public members can be customised using
+the <tt class="docutils literal"><span class="pre">sections</span></tt> option.</p>
 </dd>
+<dt><tt class="docutils literal"><span class="pre">sections</span></tt></dt>
+<dd>Designed to specialise the default behaviour of the <tt class="docutils literal"><span class="pre">members</span></tt> option.  You
+can specify a comma-separated list of sections to be included if no specific
+members are named.  The list can accept wildcards.  For instance, if you want
+to display the all protected and public members, functions, etc, then specify
+<tt class="docutils literal"><span class="pre">:sections:</span> <span class="pre">public*,</span> <span class="pre">protected*</span></tt></dd>
 </dl>
 <div class="highlight-python"><pre>.. doxygenclass:: &lt;class name&gt;
    :project: ...
    :path: ...
    :members: [...]
+   :sections: [...]
    :outline:
    :no-link:</pre>
 </div>
@@ -262,7 +275,7 @@ above. But if you had one <tt class="docutils literal"><span class="pre">.h</spa
 
     <div class="footer">
         &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>

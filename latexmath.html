@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Latex Math &mdash; Breathe 0.7.5 documentation</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.7.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="Breathe 0.7.5 documentation" href="index.html" />
+    <link rel="next" title="Contributing to Breathe" href="contributing.html" />
+    <link rel="prev" title="Template" href="template.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>Breathe 0.7.5 documentation</span></a></h1>
+        <h2 class="heading"><span>Latex Math</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="template.html">Template</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="contributing.html">Contributing to Breathe</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="latex-math">
+<h1>Latex Math<a class="headerlink" href="#latex-math" title="Permalink to this headline">¶</a></h1>
+<p>Breathe has basic support for latex math markup in the doxygen comments.  A
+class with a comment like:</p>
+<div class="highlight-python"><pre>/**
+ * @brief A class
+ *
+ * A inline formula: \f$ f(x) = a + b \f$
+ *
+ * A display style formula:
+ * @f[
+ * \int_a^b f(x) dx = F(b) - F(a)
+ * @f]
+ *
+ * A specific environment formula:
+ * \f{equation}{
+ * \begin{array}{cc}
+ * a &amp; b \\
+ * c &amp; d
+ * \end{array}
+ * \f}
+ */
+class MathHelper
+{
+public:
+  MathHelper() {}
+  ~MathHelper() {}
+}</pre>
+</div>
+<p>Will be renderer as:</p>
+<div class="line-block">
+<div class="line" id=""><span id="latexmathclass_math_helper"></span><em>class</em> <strong>MathHelper</strong></div>
+</div>
+<blockquote>
+<div><p>A class. </p>
+<p><p>A inline formula: <span class="math">\( f(x) = a + b \)</span></p>
+<p>A display style formula: <div class="math">
+\[ \int_a^b f(x) dx = F(b) - F(a) \]</div>
+</p>
+<p>A specific environment formula: <div class="math">
+\[\begin{split}\begin{equation} \begin{array}{cc} a &amp; b \\ c &amp; d \end{array} \end{equation}\end{split}\]</div>
+ </p>
+</p>
+<em>Public Functions</em><blockquote>
+<div><p id=""><span id="latexmathclass_math_helper_1ad3839d7555a7aff093b14a3c338e416e"></span><div class="line-block">
+<div class="line"> <strong>MathHelper</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<p id=""><span id="latexmathclass_math_helper_1a1608126c034f4facf768c79684e6d2cd"></span><div class="line-block">
+<div class="line"> <strong>~MathHelper</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>Without any additional configuration except for including a math extension in
+the Sphinx <tt class="docutils literal"><span class="pre">conf.py</span></tt>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&quot;breathe&quot;</span><span class="p">,</span> <span class="s">&quot;sphinx.ext.mathjax&quot;</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>The specific environment formula fails when using <tt class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></tt> so more
+work is needed.</p>
+<div class="section" id="implementation">
+<h2>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h2>
+<p>Breathe uses a internal reStructuredText node provided by
+<tt class="docutils literal"><span class="pre">sphinx.ext.mathbase</span></tt> which is then picked up and rendered by the extension
+chosen in the <tt class="docutils literal"><span class="pre">conf.py</span></tt>.  It does not pass any additional options through to
+the node, so settings like <tt class="docutils literal"><span class="pre">label</span></tt> and <tt class="docutils literal"><span class="pre">nowrap</span></tt> are currently not supported.</p>
+</div>
+<div class="section" id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<p>Thank you to <a class="reference external" href="https://github.com/dazzlezhang">dazzlezhang</a> for providing
+examples and a full run down of necessary details.  It made the implementation
+much easier.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="template.html">Template</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="contributing.html">Contributing to Breathe</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2009-2010, Michael Jones.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

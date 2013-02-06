@@ -3,19 +3,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Doxygen Test Suite &mdash; Breathe v0.7.0 documentation</title>
+    <title>Doxygen Test Suite &mdash; Breathe 0.7.5 documentation</title>
+    
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
     <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     '0.7.0',
+        VERSION:     '0.7.5',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,15 +27,16 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe v0.7.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 0.7.5 documentation" href="index.html" />
     <link rel="up" title="Test Pages" href="testpages.html" />
     <link rel="next" title="TinyXML Test Suite" href="tinyxml.html" />
     <link rel="prev" title="Test Pages" href="testpages.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe v0.7.0 documentation</span></a></h1>
+          <span>Breathe 0.7.5 documentation</span></a></h1>
         <h2 class="heading"><span>Doxygen Test Suite</span></h2>
       </div>
       <div class="topnav">
@@ -54,14 +58,15 @@
 <div class="section" id="class">
 <h2>Class<a class="headerlink" href="#class" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="classclass_test"></span><em>class</em> <strong>Test</strong></div>
+<div class="line"><em>#include &lt;inc/class.h&gt;</em></div>
 </div>
 <blockquote>
 <div><p>This is a test class. </p>
 <p>Some details about the <a class="reference internal" href="#classclass_test"><em>Test</em></a> class </p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>class.h</strong></div>
+<div class="line" id=""><span id="classclass_8h"></span><em>file</em> <strong>class.h</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -71,26 +76,31 @@
 <div class="section" id="define">
 <h2>Define<a class="headerlink" href="#define" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>define.h</strong></div>
+<div class="line" id=""><span id="project2define_8h"></span><em>file</em> <strong>define.h</strong></div>
 </div>
 <blockquote>
 <div><p>testing defines </p>
 <p>This is to test the documentation of defines. </p>
 <em>Defines</em><blockquote>
-<div><p id=""><span id="project2define_8h_1a996f7be338ccb40d1a2a5abc1ad61759"></span><strong>ABS</strong></p>
+<div><p id=""><span id="project2define_8h_1a996f7be338ccb40d1a2a5abc1ad61759"></span><strong>ABS</strong>(x)</p>
 <blockquote>
 <div><p></p>
 <p>Computes the absolute value of its argument <em>x</em>. </p>
 </div></blockquote>
-<p id=""><span id="project2define_8h_1aacc3ee1a7f283f8ef65cea31f4436a95"></span><strong>MAX</strong></p>
+<p id=""><span id="project2define_8h_1aacc3ee1a7f283f8ef65cea31f4436a95"></span><strong>MAX</strong>(x, y)</p>
 <blockquote>
 <div><p></p>
 <p>Computes the maximum of <em>x</em> and <em>y</em>. </p>
 </div></blockquote>
-<p id=""><span id="project2define_8h_1a74e75242132eaabbc1c512488a135926"></span><strong>MIN</strong></p>
+<p id=""><span id="project2define_8h_1a74e75242132eaabbc1c512488a135926"></span><strong>MIN</strong>(x, y)</p>
 <blockquote>
 <div><p></p>
 <p>Computes the minimum of <em>x</em> and <em>y</em>. </p>
+</div></blockquote>
+<p id=""><span id="project2define_8h_1abd386a218b76635edc7428251e1692c7"></span><strong>NOARGS</strong></p>
+<blockquote>
+<div><p></p>
+<p>Define with no arguments </p>
 </div></blockquote>
 </div></blockquote>
 </div></blockquote>
@@ -98,7 +108,8 @@
 <div class="section" id="enum">
 <h2>Enum<a class="headerlink" href="#enum" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project3class_test"></span><em>class</em> <strong>Test</strong></div>
+<div class="line"><em>#include &lt;enum.h&gt;</em></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -130,7 +141,7 @@
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>enum.h</strong></div>
+<div class="line" id=""><span id="project3enum_8h"></span><em>file</em> <strong>enum.h</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -140,7 +151,7 @@
 <div class="section" id="file">
 <h2>File<a class="headerlink" href="#file" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>file.h</strong></div>
+<div class="line" id=""><span id="project4file_8h"></span><em>file</em> <strong>file.h</strong></div>
 </div>
 <blockquote>
 <div><p>A brief file description. </p>
@@ -157,48 +168,43 @@
 <div class="section" id="func">
 <h2>Func<a class="headerlink" href="#func" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project5class_test"></span><em>class</em> <strong>Test</strong></div>
+<div class="line"><em>#include &lt;func.h&gt;</em></div>
 </div>
 <blockquote>
 <div><p><a class="reference internal" href="#project5class_test"><em>Test</em></a> class. </p>
 <p>Details about <a class="reference internal" href="#project5class_test"><em>Test</em></a>. </p>
 <em>Public Functions</em><blockquote>
-<div><p id="Test::member__c.i"><span id="project5class_test_1a45b6a232a4499f8ce37062eab5451570"></span><div class="line-block">
+<div><p id="Test::member__X.X"><span id="project5class_test_1a45b6a232a4499f8ce37062eab5451570"></span><div class="line-block">
 <div class="line">const char * <strong>member</strong>(char c, int n)</div>
 </div>
 </p>
 <blockquote>
 <div><p>A member function. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="breatheparameterlist first">
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>a character pointer. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">c</span></tt> - <p>a character. </p>
 </li>
 <li><tt class="first docutils literal"><span class="pre">n</span></tt> - <p>an integer. </p>
 </li>
 </ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Exceptions:</th><td class="field-body"><ul class="breatheparameterlist first">
+</dd>
+<dt><strong>Exceptions</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">std::out_of_range</span></tt> - <p>parameter is out of range. </p>
 </li>
 </ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Return:</th><td class="field-body"><p class="first last"><p>a character pointer. </p>
-</p>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </p>
 </div></blockquote>
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>func.h</strong></div>
+<div class="line" id=""><span id="project5func_8h"></span><em>file</em> <strong>func.h</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -208,19 +214,19 @@
 <div class="section" id="page">
 <h2>Page<a class="headerlink" href="#page" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>page.doc</strong></div>
+<div class="line" id=""><span id="project6page_8doc"></span><em>file</em> <strong>page.doc</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>page</em> <strong>page1</strong></div>
+<div class="line" id=""><span id="project6page1"></span><em>page</em> <strong>page1</strong></div>
 </div>
 <blockquote>
 <div>Leading text. </div></blockquote>
 <div class="line-block">
-<div class="line"><em>page</em> <strong>page2</strong></div>
+<div class="line" id=""><span id="project6page2"></span><em>page</em> <strong>page2</strong></div>
 </div>
 <blockquote>
 <div>Even more info. </div></blockquote>
@@ -228,7 +234,7 @@
 <div class="section" id="relates">
 <h2>Relates<a class="headerlink" href="#relates" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>String</strong></div>
+<div class="line" id=""><span id="project7class_string"></span><em>class</em> <strong>String</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -252,7 +258,7 @@
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>relates.cpp</strong></div>
+<div class="line" id=""><span id="project7relates_8cpp"></span><em>file</em> <strong>relates.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -272,80 +278,63 @@
 <div class="section" id="author">
 <h2>Author<a class="headerlink" href="#author" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>WindowsNT</strong></div>
+<div class="line" id=""><span id="project8class_windows_n_t"></span><em>class</em> <strong>WindowsNT</strong></div>
 </div>
 <blockquote>
 <div><p>Windows Nice Try. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Author:</th><td class="field-body"><p class="first"><p>Bill Gates </p>
-</p>
-<p><p>Several species of small furry animals gathered together in a cave and grooving with a pict. </p>
-</p>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Version:</th><td class="field-body"><p class="first"><p>4.0 </p>
-</p>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Date:</th><td class="field-body"><p class="first"><p>1996-1998 </p>
-</p>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Warning:</th><td class="field-body"><p class="first"><p>This class may explode in your face. </p>
-</p>
-<p class="last"><p>If you inherit anything from this class, you&#8217;re doomed. </p>
-</p>
-</td>
-</tr>
-</tbody>
-</table>
+<p><dl class="docutils">
+<dt><strong>Author</strong></dt>
+<dd><p class="first">Bill Gates </p>
+<p class="last">Several species of small furry animals gathered together in a cave and grooving with a pict. </p>
+</dd>
+<dt><strong>Version</strong></dt>
+<dd>4.0 </dd>
+<dt><strong>Date</strong></dt>
+<dd>1996-1998 </dd>
+<dt><strong>Warning</strong></dt>
+<dd><p class="first">This class may explode in your face. </p>
+<p class="last">If you inherit anything from this class, you&#8217;re doomed. </p>
+</dd>
+</dl>
 </p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>author.cpp</strong></div>
+<div class="line" id=""><span id="project8author_8cpp"></span><em>file</em> <strong>author.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>page</em> <strong>bug</strong></div>
+<div class="line" id=""><span id="project8bug"></span><em>page</em> <strong>bug</strong></div>
 </div>
 <blockquote>
-<div> </div></blockquote>
+<div></div></blockquote>
 </div>
 <div class="section" id="par">
 <h2>Par<a class="headerlink" href="#par" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project9class_test"></span><em>class</em> <strong>Test</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p><p>Normal text.</p>
 <p>
-More normal text. <table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name" colspan="2">User defined paragraph::</th></tr>
-<tr class="field"><td>&nbsp;</td><td class="field-body">Contents of the paragraph.</td>
-</tr>
-<tr class="field"><th class="field-name">:</th><td class="field-body">New paragraph under the same heading.</td>
-</tr>
-<tr class="field"><th class="field-name">Note:</th><td class="field-body">This note consists of two paragraphs. This is the first paragraph.</td>
-</tr>
-<tr class="field"><th class="field-name">:</th><td class="field-body">And this is the second paragraph.</td>
-</tr>
-</tbody>
-</table>
+More normal text. <dl class="docutils">
+<dt><strong>User defined paragraph:</strong></dt>
+<dd>Contents of the paragraph.</dd>
+<dt><strong></strong></dt>
+<dd>New paragraph under the same heading.</dd>
+<dt><strong>Note</strong></dt>
+<dd>This note consists of two paragraphs. This is the first paragraph.</dd>
+<dt><strong></strong></dt>
+<dd>And this is the second paragraph.</dd>
+</dl>
 </p>
 </p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>par.cpp</strong></div>
+<div class="line" id=""><span id="project9par_8cpp"></span><em>file</em> <strong>par.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -355,7 +344,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="overload">
 <h2>Overload<a class="headerlink" href="#overload" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project10class_test"></span><em>class</em> <strong>Test</strong></div>
 </div>
 <blockquote>
 <div><p>A short description. </p>
@@ -380,7 +369,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>overload.cpp</strong></div>
+<div class="line" id=""><span id="project10overload_8cpp"></span><em>file</em> <strong>overload.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -390,7 +379,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project11class_test"></span><em>class</em> <strong>Test</strong></div>
 </div>
 <blockquote>
 <div><p>A <a class="reference internal" href="#project11class_test"><em>Test</em></a> class. </p>
@@ -407,14 +396,14 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>example.cpp</strong></div>
+<div class="line" id=""><span id="project11example_8cpp"></span><em>file</em> <strong>example.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>example</em> <strong>example_test.cpp</strong></div>
+<div class="line" id=""><span id="project11example_test_8cpp-example"></span><em>example</em> <strong>example_test.cpp</strong></div>
 </div>
 <blockquote>
 <div>This is an example of how to use the <a class="reference internal" href="#project11class_test"><em>Test</em></a> class. More details about this example.  </div></blockquote>
@@ -422,7 +411,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="include">
 <h2>Include<a class="headerlink" href="#include" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project12class_test"></span><em>class</em> <strong>Test</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -439,14 +428,14 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>include.cpp</strong></div>
+<div class="line" id=""><span id="project12include_8cpp"></span><em>file</em> <strong>include.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>page</em> <strong>example</strong></div>
+<div class="line" id=""><span id="project12example"></span><em>page</em> <strong>example</strong></div>
 </div>
 <blockquote>
 <div> Our main function starts like this:  First we create a object <tt class="docutils literal"><span class="pre">t</span></tt> of the <a class="reference internal" href="#project12class_test"><em>Test</em></a> class.  Then we call the example member function  After that our little test routine ends.  </div></blockquote>
@@ -454,7 +443,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="qtstyle">
 <h2>QtStyle<a class="headerlink" href="#qtstyle" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project13class_test"></span><em>class</em> <strong>Test</strong></div>
 </div>
 <blockquote>
 <div><p>A test class. </p>
@@ -498,28 +487,20 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </p>
 <blockquote>
 <div><p>A normal member taking two arguments and returning an integer value. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="breatheparameterlist first">
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The test results </dd>
+<dt><strong>See</strong></dt>
+<dd><a class="reference internal" href="#project13class_test_1a99f2bbfac6c95612322b0f10e607ebe5"><em>Test()</em></a>, <a class="reference internal" href="#project13class_test_1a2b0a62f1e667bbe8d8cb18d785bfa991"><em>~Test()</em></a>, <a class="reference internal" href="#project13class_test_1a3edb9fdc1e9f0d5274b57386ab03704c"><em>testMeToo()</em></a> and <a class="reference internal" href="#project13class_test_1a3085f973ef857d85d647bf04e89760d0"><em>publicVar()</em></a> </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">a</span></tt> - <p>an integer argument. </p>
 </li>
 <li><tt class="first docutils literal"><span class="pre">s</span></tt> - <p>a constant character pointer. </p>
 </li>
 </ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Return:</th><td class="field-body"><p class="first"><p>The test results </p>
-</p>
-</td>
-</tr>
-<tr class="field"><th class="field-name">See:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="#project13class_test_1a99f2bbfac6c95612322b0f10e607ebe5"><em>Test()</em></a>, <a class="reference internal" href="#project13class_test_1a2b0a62f1e667bbe8d8cb18d785bfa991"><em>~Test()</em></a>, <a class="reference internal" href="#project13class_test_1a3edb9fdc1e9f0d5274b57386ab03704c"><em>testMeToo()</em></a> and <a class="reference internal" href="#project13class_test_1a3085f973ef857d85d647bf04e89760d0"><em>publicVar()</em></a> </p>
-</p>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </p>
 </div></blockquote>
 <p id=""><span id="project13class_test_1a3edb9fdc1e9f0d5274b57386ab03704c"></span><div class="line-block">
@@ -528,24 +509,18 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </p>
 <blockquote>
 <div><p>A pure virtual member. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="breatheparameterlist first">
+<p><dl class="docutils">
+<dt><strong>See</strong></dt>
+<dd><a class="reference internal" href="#project13class_test_1af7115d71dda64654a7104c24f130e8d0"><em>testMe()</em></a> </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">c1</span></tt> - <p>the first argument. </p>
 </li>
 <li><tt class="first docutils literal"><span class="pre">c2</span></tt> - <p>the second argument. </p>
 </li>
 </ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">See:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="#project13class_test_1af7115d71dda64654a7104c24f130e8d0"><em>testMe()</em></a> </p>
-</p>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </p>
 </div></blockquote>
 </div></blockquote>
@@ -573,7 +548,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>qtstyle.cpp</strong></div>
+<div class="line" id=""><span id="project13qtstyle_8cpp"></span><em>file</em> <strong>qtstyle.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -583,7 +558,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="jdstyle">
 <h2>JdStyle<a class="headerlink" href="#jdstyle" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project14class_test"></span><em>class</em> <strong>Test</strong></div>
 </div>
 <blockquote>
 <div><p>A test class. </p>
@@ -627,34 +602,24 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </p>
 <blockquote>
 <div><p>a normal member taking two arguments and returning an integer value. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="breatheparameterlist first">
+<p><dl class="docutils">
+<dt><strong>See</strong></dt>
+<dd><p class="first"><a class="reference internal" href="#project14class_test_1a99f2bbfac6c95612322b0f10e607ebe5"><em>Test()</em></a> </p>
+<p><a class="reference internal" href="#project14class_test_1a2b0a62f1e667bbe8d8cb18d785bfa991"><em>~Test()</em></a> </p>
+<p><a class="reference internal" href="#project14class_test_1a3edb9fdc1e9f0d5274b57386ab03704c"><em>testMeToo()</em></a> </p>
+<p class="last"><a class="reference internal" href="#project14class_test_1a3085f973ef857d85d647bf04e89760d0"><em>publicVar()</em></a> </p>
+</dd>
+<dt><strong>Return</strong></dt>
+<dd>The test results </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">a</span></tt> - <p>an integer argument. </p>
 </li>
 <li><tt class="first docutils literal"><span class="pre">s</span></tt> - <p>a constant character pointer. </p>
 </li>
 </ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">See:</th><td class="field-body"><p class="first"><p><a class="reference internal" href="#project14class_test_1a99f2bbfac6c95612322b0f10e607ebe5"><em>Test()</em></a> </p>
-</p>
-<p><p><a class="reference internal" href="#project14class_test_1a2b0a62f1e667bbe8d8cb18d785bfa991"><em>~Test()</em></a> </p>
-</p>
-<p><p><a class="reference internal" href="#project14class_test_1a3edb9fdc1e9f0d5274b57386ab03704c"><em>testMeToo()</em></a> </p>
-</p>
-<p><p><a class="reference internal" href="#project14class_test_1a3085f973ef857d85d647bf04e89760d0"><em>publicVar()</em></a> </p>
-</p>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Return:</th><td class="field-body"><p class="first last"><p>The test results </p>
-</p>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </p>
 </div></blockquote>
 <p id=""><span id="project14class_test_1a3edb9fdc1e9f0d5274b57386ab03704c"></span><div class="line-block">
@@ -663,24 +628,18 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </p>
 <blockquote>
 <div><p>A pure virtual member. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="breatheparameterlist first">
+<p><dl class="docutils">
+<dt><strong>See</strong></dt>
+<dd><a class="reference internal" href="#project14class_test_1af7115d71dda64654a7104c24f130e8d0"><em>testMe()</em></a> </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">c1</span></tt> - <p>the first argument. </p>
 </li>
 <li><tt class="first docutils literal"><span class="pre">c2</span></tt> - <p>the second argument. </p>
 </li>
 </ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">See:</th><td class="field-body"><p class="first last"><p><a class="reference internal" href="#project14class_test_1af7115d71dda64654a7104c24f130e8d0"><em>testMe()</em></a> </p>
-</p>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </p>
 </div></blockquote>
 </div></blockquote>
@@ -708,7 +667,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>jdstyle.cpp</strong></div>
+<div class="line" id=""><span id="project14jdstyle_8cpp"></span><em>file</em> <strong>jdstyle.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -718,13 +677,13 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="structcmd">
 <h2>StructCmd<a class="headerlink" href="#structcmd" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>structcmd.h</strong></div>
+<div class="line" id=""><span id="project15structcmd_8h"></span><em>file</em> <strong>structcmd.h</strong></div>
 </div>
 <blockquote>
 <div><p>A Documented file. </p>
 <p>Details. </p>
 <em>Defines</em><blockquote>
-<div><p id=""><span id="project15structcmd_8h_1afa99ec4acc4ecb2dc3c2d05da15d0e3f"></span><strong>MAX</strong></p>
+<div><p id=""><span id="project15structcmd_8h_1afa99ec4acc4ecb2dc3c2d05da15d0e3f"></span><strong>MAX</strong>(a, b)</p>
 <blockquote>
 <div><p>A macro that returns the maximum of <em>a</em> and <em>b</em>. </p>
 <p>Details. </p>
@@ -738,61 +697,51 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <em>Functions</em><blockquote>
-<div><p id="open__cCP.i"><span id="project15structcmd_8h_1a2c4414339f388561554c2deab11a1a07"></span><div class="line-block">
+<div><p id="open__X.X"><span id="project15structcmd_8h_1a2c4414339f388561554c2deab11a1a07"></span><div class="line-block">
 <div class="line">int <strong>open</strong>(const char * pathname, int flags)</div>
 </div>
 </p>
 <blockquote>
 <div><p>Opens a file descriptor. </p>
 <p><p>Detailed description.</p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="breatheparameterlist first last">
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">pathname</span></tt> - <p>The name of the descriptor. </p>
 </li>
 <li><tt class="first docutils literal"><span class="pre">flags</span></tt> - <p>Opening flags. </p>
 </li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </p>
 </p>
 </div></blockquote>
-<p id="close__i"><span id="project15structcmd_8h_1ae152484c890a24e4d9b4980e7b965be0"></span><div class="line-block">
+<p id="close__X"><span id="project15structcmd_8h_1ae152484c890a24e4d9b4980e7b965be0"></span><div class="line-block">
 <div class="line">int <strong>close</strong>(int fd)</div>
 </div>
 </p>
 <blockquote>
 <div><p>Closes the file descriptor <em>fd</em>. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="breatheparameterlist first last">
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">fd</span></tt> - <p>The descriptor to close. </p>
 </li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </p>
 </div></blockquote>
-<p id="write__i.cCP.s"><span id="project15structcmd_8h_1af2a3ea719b83f672637febdd87c36c36"></span><div class="line-block">
+<p id="write__X.X.X"><span id="project15structcmd_8h_1af2a3ea719b83f672637febdd87c36c36"></span><div class="line-block">
 <div class="line">size_t <strong>write</strong>(int fd, const char * buf, size_t count)</div>
 </div>
 </p>
 <blockquote>
 <div><p>Writes <em>count</em> bytes from <em>buf</em> to the filedescriptor <em>fd</em>. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="breatheparameterlist first last">
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">fd</span></tt> - <p>The descriptor to write to. </p>
 </li>
 <li><tt class="first docutils literal"><span class="pre">buf</span></tt> - <p>The data buffer to write. </p>
@@ -800,23 +749,19 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <li><tt class="first docutils literal"><span class="pre">count</span></tt> - <p>The number of bytes to write. </p>
 </li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </p>
 </div></blockquote>
-<p id="read__i.cP.s"><span id="project15structcmd_8h_1a9c7b76d5266903891c803132d51ccb90"></span><div class="line-block">
+<p id="read__X.X.X"><span id="project15structcmd_8h_1a9c7b76d5266903891c803132d51ccb90"></span><div class="line-block">
 <div class="line">int <strong>read</strong>(int fd, char * buf, size_t count)</div>
 </div>
 </p>
 <blockquote>
 <div><p>Read bytes from a file descriptor. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="breatheparameterlist first last">
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">fd</span></tt> - <p>The descriptor to read from. </p>
 </li>
 <li><tt class="first docutils literal"><span class="pre">buf</span></tt> - <p>The buffer to read into. </p>
@@ -824,10 +769,8 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <li><tt class="first docutils literal"><span class="pre">count</span></tt> - <p>The number of bytes to read. </p>
 </li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </p>
 </div></blockquote>
 </div></blockquote>
@@ -835,14 +778,10 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div><p id=""><span id="project15structcmd_8h_1ad65a8842cc674e3ddf69355898c0ecbf"></span>int <strong>errno</strong></p>
 <blockquote>
 <div><p>Contains the last error code. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Warning:</th><td class="field-body">Not thread safe! </td>
-</tr>
-</tbody>
-</table>
+<p><dl class="docutils">
+<dt><strong>Warning</strong></dt>
+<dd>Not thread safe! </dd>
+</dl>
 </p>
 </div></blockquote>
 </div></blockquote>
@@ -851,7 +790,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="autolink">
 <h2>Autolink<a class="headerlink" href="#autolink" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project16class_test"></span><em>class</em> <strong>Test</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -867,15 +806,11 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <p>A link to a variable <a class="reference internal" href="#project16class_test_1a4293aceea96ff87ce79cec7cafe731a6"><em>using another text</em></a> as a link.</p>
 <p>A link to the enumeration type <a class="reference internal" href="#project16class_test_1a0653c5125502203305b6fe839e99ed01"><em>EType</em></a>.</p>
 <p>A link to some enumeration values: Val1  and GVal1.</p>
-<p>And last but not least a link to a  <a class="reference internal" href="#project16autolink_8cpp"><em>autolink.cpp</em></a>.</p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">See:</th><td class="field-body">Inside a see also section any word is checked, so <a class="reference internal" href="#project16class_test_1a0653c5125502203305b6fe839e99ed01"><em>EType</em></a>, Val1, GVal1, <a class="reference internal" href="#project16class_test_1a2b0a62f1e667bbe8d8cb18d785bfa991"><em>~Test</em></a> and <a class="reference internal" href="#project16class_test_1a557cfc252c843102af5404c1c260d4fc"><em>member</em></a> will be replaced by links in HTML. </td>
-</tr>
-</tbody>
-</table>
+<p>And last but not least a link to a file: <a class="reference internal" href="#project16autolink_8cpp"><em>autolink.cpp</em></a>.</p>
+<p><dl class="docutils">
+<dt><strong>See</strong></dt>
+<dd>Inside a see also section any word is checked, so <a class="reference internal" href="#project16class_test_1a0653c5125502203305b6fe839e99ed01"><em>EType</em></a>, Val1, GVal1, <a class="reference internal" href="#project16class_test_1a2b0a62f1e667bbe8d8cb18d785bfa991"><em>~Test</em></a> and <a class="reference internal" href="#project16class_test_1a557cfc252c843102af5404c1c260d4fc"><em>member</em></a> will be replaced by links in HTML. </dd>
+</dl>
 </p>
 </p>
 <em>Public Type</em><blockquote>
@@ -935,7 +870,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>autolink.cpp</strong></div>
+<div class="line" id=""><span id="project16autolink_8cpp"></span><em>file</em> <strong>autolink.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -951,7 +886,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <p>A link to some enumeration values Test::Val1 and GVal2 </p>
 </p>
 <em>Defines</em><blockquote>
-<div><p id=""><span id="project16autolink_8cpp_1a996f7be338ccb40d1a2a5abc1ad61759"></span><strong>ABS</strong></p>
+<div><p id=""><span id="project16autolink_8cpp_1a996f7be338ccb40d1a2a5abc1ad61759"></span><strong>ABS</strong>(x)</p>
 <blockquote>
 <div><p></p>
 <p>A macro definition. </p>
@@ -990,7 +925,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="restypedef">
 <h2>ResTypeDef<a class="headerlink" href="#restypedef" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>struct</em> <strong>CoordStruct</strong></div>
+<div class="line" id=""><span id="project17struct_coord_struct"></span><em>struct</em> <strong>CoordStruct</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1009,7 +944,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>restypedef.cpp</strong></div>
+<div class="line" id=""><span id="project17restypedef_8cpp"></span><em>file</em> <strong>restypedef.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1023,7 +958,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 <em>Functions</em><blockquote>
 <div><p id=""><span id="project17restypedef_8cpp_1a102acaaa258e937adf910898c6133545"></span><div class="line-block">
-<div class="line"><a class="reference internal" href="#project17struct_coord_struct"><em>Coord</em></a> <strong>add</strong>(<a class="reference internal" href="#project17struct_coord_struct"><em>Coord</em></a> c1, <a class="reference internal" href="#project17struct_coord_struct"><em>Coord</em></a> c2)</div>
+<div class="line"><a class="reference internal" href="#project17restypedef_8cpp_1a013489fb99c6a5b012db8ec66544a507"><em>Coord</em></a> <strong>add</strong>(<a class="reference internal" href="#project17restypedef_8cpp_1a013489fb99c6a5b012db8ec66544a507"><em>Coord</em></a> c1, <a class="reference internal" href="#project17restypedef_8cpp_1a013489fb99c6a5b012db8ec66544a507"><em>Coord</em></a> c2)</div>
 </div>
 </p>
 <blockquote>
@@ -1036,7 +971,8 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="afterdoc">
 <h2>AfterDoc<a class="headerlink" href="#afterdoc" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project18class_test"></span><em>class</em> <strong>Test</strong></div>
+<div class="line"><em>#include &lt;afterdoc.h&gt;</em></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1074,7 +1010,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>afterdoc.h</strong></div>
+<div class="line" id=""><span id="project18afterdoc_8h"></span><em>file</em> <strong>afterdoc.h</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1085,7 +1021,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <h2>Template<a class="headerlink" href="#template" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">template &lt; class T, int i = 100 &gt;</div>
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project19class_test"></span><em>class</em> <strong>Test</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1111,7 +1047,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 <div class="line-block">
 <div class="line">template &lt; class T &gt;</div>
-<div class="line"><em>class</em> <strong>Test&lt; T * &gt;</strong></div>
+<div class="line" id=""><span id="project19class_test_3_01_t_01_5_01_4"></span><em>class</em> <strong>Test&lt; T * &gt;</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1129,7 +1065,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 <div class="line-block">
 <div class="line">template &lt;  &gt;</div>
-<div class="line"><em>class</em> <strong>Test&lt; void *, 200 &gt;</strong></div>
+<div class="line" id=""><span id="project19class_test_3_01void_01_5_00_01200_01_4"></span><em>class</em> <strong>Test&lt; void *, 200 &gt;</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1146,7 +1082,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>templ.cpp</strong></div>
+<div class="line" id=""><span id="project19templ_8cpp"></span><em>file</em> <strong>templ.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1156,7 +1092,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="tag">
 <h2>Tag<a class="headerlink" href="#tag" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Tag</strong></div>
+<div class="line" id=""><span id="project20class_tag"></span><em>class</em> <strong>Tag</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1173,7 +1109,7 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>tag.cpp</strong></div>
+<div class="line" id=""><span id="project20tag_8cpp"></span><em>file</em> <strong>tag.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1183,58 +1119,54 @@ More normal text. <table class="docutils field-list" frame="void" rules="none">
 <div class="section" id="group">
 <h2>Group<a class="headerlink" href="#group" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>C1</strong></div>
+<div class="line" id=""><span id="project21class_c1"></span><em>class</em> <strong>C1</strong></div>
 </div>
 <blockquote>
 <div><p>class <a class="reference internal" href="#project21class_c1"><em>C1</em></a> in group 1 </p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>C2</strong></div>
+<div class="line" id=""><span id="project21class_c2"></span><em>class</em> <strong>C2</strong></div>
 </div>
 <blockquote>
 <div><p>class <a class="reference internal" href="#project21class_c2"><em>C2</em></a> in group 1 </p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>C3</strong></div>
+<div class="line" id=""><span id="project21class_c3"></span><em>class</em> <strong>C3</strong></div>
 </div>
 <blockquote>
 <div><p>class <a class="reference internal" href="#project21class_c3"><em>C3</em></a> in group 2 </p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>C4</strong></div>
+<div class="line" id=""><span id="project21class_c4"></span><em>class</em> <strong>C4</strong></div>
 </div>
 <blockquote>
 <div><p>class <a class="reference internal" href="#project21class_c4"><em>C4</em></a> in group 2 </p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>C5</strong></div>
+<div class="line" id=""><span id="project21class_c5"></span><em>class</em> <strong>C5</strong></div>
 </div>
 <blockquote>
 <div><p>class <a class="reference internal" href="#project21class_c5"><em>C5</em></a> in <a class="reference internal" href="#project21group__group3"><em>the third group</em></a>. </p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>namespace</em> <strong>N1</strong></div>
+<div class="line" id=""><span id="project21namespace_n1"></span><em>namespace</em> <strong>N1</strong></div>
 </div>
 <blockquote>
 <div><p>namespace <a class="reference internal" href="#project21namespace_n1"><em>N1</em></a> is in four groups </p>
 <p>
-Also see <a class="reference internal" href="#project21group__group5"><em>This is another section in group 5</em></a> <table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">See:</th><td class="field-body"><a class="reference internal" href="#project21group__group1"><em>The first group</em></a>, <a class="reference internal" href="#project21group__group2"><em>The Second Group</em></a>, <a class="reference internal" href="#project21group__group3"><em>The Third Group</em></a>, <a class="reference internal" href="#project21group__group4"><em>The Fourth Group</em></a></td>
-</tr>
-</tbody>
-</table>
+Also see <a class="reference internal" href="#project21group__group5"><em>This is another section in group 5</em></a> <dl class="docutils">
+<dt><strong>See</strong></dt>
+<dd><a class="reference internal" href="#project21group__group1"><em>The first group</em></a>, <a class="reference internal" href="#project21group__group2"><em>The Second Group</em></a>, <a class="reference internal" href="#project21group__group3"><em>The Third Group</em></a>, <a class="reference internal" href="#project21group__group4"><em>The Fourth Group</em></a></dd>
+</dl>
 </p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>group.cpp</strong></div>
+<div class="line" id=""><span id="project21group_8cpp"></span><em>file</em> <strong>group.cpp</strong></div>
 </div>
 <blockquote>
 <div><p>this file in group 3 </p>
@@ -1267,47 +1199,47 @@ Also see <a class="reference internal" href="#project21group__group5"><em>This i
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>group</em> <strong>group1</strong></div>
+<div class="line" id=""><span id="project21group__group1"></span><em>group</em> <strong>group1</strong></div>
 </div>
 <blockquote>
 <div><p>This is the first group. </p>
 <p>More documentation for the first group. </p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>group</em> <strong>group2</strong></div>
+<div class="line" id=""><span id="project21group__group2"></span><em>group</em> <strong>group2</strong></div>
 </div>
 <blockquote>
 <div><p>This is the second group. </p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>group</em> <strong>group3</strong></div>
+<div class="line" id=""><span id="project21group__group3"></span><em>group</em> <strong>group3</strong></div>
 </div>
 <blockquote>
 <div><p>This is the third group. </p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>group</em> <strong>group4</strong></div>
+<div class="line" id=""><span id="project21group__group4"></span><em>group</em> <strong>group4</strong></div>
 </div>
 <blockquote>
 <div><p>Group 4 is a subgroup of group 3. </p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>group</em> <strong>group5</strong></div>
+<div class="line" id=""><span id="project21group__group5"></span><em>group</em> <strong>group5</strong></div>
 </div>
 <blockquote>
 <div><p>This is the fifth group. </p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>page</em> <strong>mypage1</strong></div>
+<div class="line" id=""><span id="project21group__group5_mypage1"></span><em>page</em> <strong>mypage1</strong></div>
 </div>
 <blockquote>
 <div>Text of the first section </div></blockquote>
 <div class="line-block">
-<div class="line"><em>page</em> <strong>mypage2</strong></div>
+<div class="line" id=""><span id="project21group__group5_mypage2"></span><em>page</em> <strong>mypage2</strong></div>
 </div>
 <blockquote>
 <div>Text of the second section </div></blockquote>
@@ -1315,7 +1247,8 @@ Also see <a class="reference internal" href="#project21group__group5"><em>This i
 <div class="section" id="diagrams">
 <h2>Diagrams<a class="headerlink" href="#diagrams" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>A</strong></div>
+<div class="line" id=""><span id="project22class_a"></span><em>class</em> <strong>A</strong></div>
+<div class="line"><em>#include &lt;diagrams_a.h&gt;</em></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1329,7 +1262,8 @@ Also see <a class="reference internal" href="#project21group__group5"><em>This i
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>B</strong></div>
+<div class="line" id=""><span id="project22class_b"></span><em>class</em> <strong>B</strong></div>
+<div class="line"><em>#include &lt;diagrams_b.h&gt;</em></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1343,7 +1277,8 @@ Also see <a class="reference internal" href="#project21group__group5"><em>This i
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>C</strong></div>
+<div class="line" id=""><span id="project22class_c"></span><em>class</em> <strong>C</strong></div>
+<div class="line"><em>#include &lt;diagrams_c.h&gt;</em></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1357,7 +1292,8 @@ Also see <a class="reference internal" href="#project21group__group5"><em>This i
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>D</strong></div>
+<div class="line" id=""><span id="project22class_d"></span><em>class</em> <strong>D</strong></div>
+<div class="line"><em>#include &lt;diagrams_d.h&gt;</em></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1371,42 +1307,47 @@ Also see <a class="reference internal" href="#project21group__group5"><em>This i
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>E</strong></div>
+<div class="line" id=""><span id="project22class_e"></span><em>class</em> <strong>E</strong></div>
+<div class="line"><em>#include &lt;diagrams_e.h&gt;</em></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>diagrams_a.h</strong></div>
+<div class="line" id=""><span id="project22diagrams__a_8h"></span><em>file</em> <strong>diagrams_a.h</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>diagrams_b.h</strong></div>
+<div class="line" id=""><span id="project22diagrams__b_8h"></span><em>file</em> <strong>diagrams_b.h</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>diagrams_c.h</strong></div>
+<div class="line" id=""><span id="project22diagrams__c_8h"></span><em>file</em> <strong>diagrams_c.h</strong></div>
+<div class="line"><em>#include &#8220;diagrams_c.h&#8221;</em></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>diagrams_d.h</strong></div>
+<div class="line" id=""><span id="project22diagrams__d_8h"></span><em>file</em> <strong>diagrams_d.h</strong></div>
+<div class="line"><em>#include &#8220;diagrams_a.h&#8221;</em></div>
+<div class="line"><em>#include &#8220;diagrams_b.h&#8221;</em></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>diagrams_e.h</strong></div>
+<div class="line" id=""><span id="project22diagrams__e_8h"></span><em>file</em> <strong>diagrams_e.h</strong></div>
+<div class="line"><em>#include &#8220;diagrams_d.h&#8221;</em></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1416,7 +1357,7 @@ Also see <a class="reference internal" href="#project21group__group5"><em>This i
 <div class="section" id="memgrp">
 <h2>Memgrp<a class="headerlink" href="#memgrp" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>Test</strong></div>
+<div class="line" id=""><span id="project23class_test"></span><em>class</em> <strong>Test</strong></div>
 </div>
 <blockquote>
 <div><p>A class. </p>
@@ -1470,7 +1411,7 @@ Also see <a class="reference internal" href="#project21group__group5"><em>This i
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>memgrp.cpp</strong></div>
+<div class="line" id=""><span id="project23memgrp_8cpp"></span><em>file</em> <strong>memgrp.cpp</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1500,7 +1441,7 @@ Also see <a class="reference internal" href="#project21group__group5"><em>This i
 <div class="section" id="docstring">
 <h2>Docstring<a class="headerlink" href="#docstring" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>docstring::PyClass</strong></div>
+<div class="line" id=""><span id="project24classdocstring_1_1PyClass"></span><em>class</em> <strong>docstring::PyClass</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1532,7 +1473,7 @@ More details.</pre>
 </div></blockquote>
 </div></blockquote>
 <em>Private Members</em><blockquote>
-<div><p id=""><span id="project24classdocstring_1_1PyClass_1a263074a6bad2aa5bb40ef63b886d42ef"></span> <strong>_memVar</strong></p>
+<div><p id=""><span id="project24classdocstring_1_1PyClass_1a45ced0d4bfe82f1f5df00bdb7a19aa0f"></span> <strong>_memVar</strong></p>
 <blockquote>
 <div><p></p>
 <p></p>
@@ -1540,7 +1481,7 @@ More details.</pre>
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>namespace</em> <strong>docstring</strong></div>
+<div class="line" id=""><span id="project24namespacedocstring"></span><em>namespace</em> <strong>docstring</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1566,7 +1507,7 @@ More details.</pre>
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>docstring.py</strong></div>
+<div class="line" id=""><span id="project24docstring_8py"></span><em>file</em> <strong>docstring.py</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1576,7 +1517,7 @@ More details.</pre>
 <div class="section" id="pyexample">
 <h2>PyExample<a class="headerlink" href="#pyexample" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>pyexample::PyClass</strong></div>
+<div class="line" id=""><span id="project25classpyexample_1_1PyClass"></span><em>class</em> <strong>pyexample::PyClass</strong></div>
 </div>
 <blockquote>
 <div><p>Documentation for a class. </p>
@@ -1596,23 +1537,19 @@ More details.</pre>
 </p>
 <blockquote>
 <div><p>Documentation for a method. </p>
-<p><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="breatheparameterlist first last">
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
 <li><tt class="first docutils literal"><span class="pre">self</span></tt> - <p>The object pointer. </p>
 </li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </p>
 </div></blockquote>
 </div></blockquote>
 <em>Public Static Attributes</em><blockquote>
-<div><p id=""><span id="project25classpyexample_1_1PyClass_1a3fc7b9df3a3e5e68b595593d425da952"></span>int <strong>classVar</strong></p>
+<div><p id=""><span id="project25classpyexample_1_1PyClass_1abd17aff54e5b0ca194020c796c733546"></span>int <strong>classVar</strong></p>
 <blockquote>
 <div><p>A class variable. </p>
 <p></p>
@@ -1627,7 +1564,7 @@ More details.</pre>
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>namespace</em> <strong>pyexample</strong></div>
+<div class="line" id=""><span id="project25namespacepyexample"></span><em>namespace</em> <strong>pyexample</strong></div>
 </div>
 <blockquote>
 <div><p>Documentation for this module. </p>
@@ -1644,7 +1581,7 @@ More details.</pre>
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>pyexample.py</strong></div>
+<div class="line" id=""><span id="project25pyexample_8py"></span><em>file</em> <strong>pyexample.py</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1654,53 +1591,43 @@ More details.</pre>
 <div class="section" id="mux">
 <h2>Mux<a class="headerlink" href="#mux" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>mux_using_with::behavior</strong></div>
+<div class="line" id=""><span id="project26classmux__using__with_1_1behavior"></span><em>class</em> <strong>mux_using_with::behavior</strong></div>
 </div>
 <blockquote>
 <div><p>Architure definition of the MUX. </p>
 <p>More details about this mux element. </p>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>class</em> <strong>mux_using_with</strong></div>
+<div class="line" id=""><span id="project26classmux__using__with"></span><em>class</em> <strong>mux_using_with</strong></div>
 </div>
 <blockquote>
-<div><p>Mux entity brief description. </p>
-<p>Detailed description of this mux design element. </p>
+<div><p>Use standard library. </p>
+<p>Use logic elements Mux entity brief description Detailed description of this mux design element. </p>
 <em>Public Members</em><blockquote>
-<div><p id=""><span id="project26classmux__using__with_1af1a1ec7c6c9f700e1aab44a45be2f255"></span>in <strong>din_0</strong>std_logic;</p>
+<div><p id=""><span id="project26classmux__using__with_1a9a6d24e10dc94260c5c6bacab976743d"></span>in <strong>din_0</strong>std_logic </p>
 <blockquote>
 <div><p>Mux first input. </p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="project26classmux__using__with_1afdaa7a023348348a4891c94a41471b2b"></span>in <strong>din_1</strong>std_logic;</p>
+<p id=""><span id="project26classmux__using__with_1a29c1cb59806f61c5788017ff4bb60208"></span>in <strong>din_1</strong>std_logic </p>
 <blockquote>
 <div><p>Mux Second input. </p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="project26classmux__using__with_1a0bafca15f54703bc84ec308996d4a7ce"></span>in <strong>sel</strong>std_logic;</p>
+<p id=""><span id="project26classmux__using__with_1ae9b5ead0533e468e477474ffab2c9120"></span>in <strong>sel</strong>std_logic </p>
 <blockquote>
 <div><p>Select input. </p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="project26classmux__using__with_1abde1bd89fd99d6a6559b8b47b31bf6aa"></span>out <strong>mux_out</strong>std_logic;</p>
+<p id=""><span id="project26classmux__using__with_1a6928f4988695a7c13b41e8cbec4963f4"></span>out <strong>mux_out</strong>std_logic </p>
 <blockquote>
 <div><p>Mux output. </p>
-<p></p>
-</div></blockquote>
-<p id=""><span id="project26classmux__using__with_1acbe0bfecfa56fa4103ea80a491bfdbc8"></span>library <strong>ieee</strong></p>
-<blockquote>
-<div><p>Use standard library. </p>
-<p></p>
-</div></blockquote>
-<p id=""><span id="project26classmux__using__with_1a75f07bd8bde6f849270ce9de65573a4f"></span>package <strong>std_logic_1164</strong></p>
-<blockquote>
-<div><p>Use logic elements. </p>
 <p></p>
 </div></blockquote>
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>mux.vhdl</strong></div>
+<div class="line" id=""><span id="project26mux_8vhdl"></span><em>file</em> <strong>mux.vhdl</strong></div>
 </div>
 <blockquote>
 <div><p>2:1 Mux using with-select </p>
@@ -1710,7 +1637,7 @@ More details.</pre>
 <div class="section" id="manual">
 <h2>Manual<a class="headerlink" href="#manual" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><em>struct</em> <strong>Car</strong></div>
+<div class="line" id=""><span id="project27struct_car"></span><em>struct</em> <strong>Car</strong></div>
 </div>
 <blockquote>
 <div><p><a class="reference internal" href="#project27struct_car"><em>Car</em></a> type. </p>
@@ -1724,7 +1651,7 @@ More details.</pre>
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>struct</em> <strong>Object</strong></div>
+<div class="line" id=""><span id="project27struct_object"></span><em>struct</em> <strong>Object</strong></div>
 </div>
 <blockquote>
 <div><p><a class="reference internal" href="#project27struct_object"><em>Object</em></a> type. </p>
@@ -1756,7 +1683,7 @@ More details.</pre>
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>struct</em> <strong>Truck</strong></div>
+<div class="line" id=""><span id="project27struct_truck"></span><em>struct</em> <strong>Truck</strong></div>
 </div>
 <blockquote>
 <div><p><a class="reference internal" href="#project27struct_truck"><em>Truck</em></a> type. </p>
@@ -1770,7 +1697,7 @@ More details.</pre>
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>struct</em> <strong>Vehicle</strong></div>
+<div class="line" id=""><span id="project27struct_vehicle"></span><em>struct</em> <strong>Vehicle</strong></div>
 </div>
 <blockquote>
 <div><p><a class="reference internal" href="#project27struct_vehicle"><em>Vehicle</em></a> type. </p>
@@ -1802,7 +1729,7 @@ More details.</pre>
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line"><em>file</em> <strong>manual.c</strong></div>
+<div class="line" id=""><span id="project27manual_8c"></span><em>file</em> <strong>manual.c</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -1839,7 +1766,7 @@ More details.</pre>
 
     <div class="footer">
         &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>
