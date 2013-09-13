@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 """
 Generated Mon Feb  9 19:08:05 2009 by generateDS.py.
 """
@@ -7,7 +5,7 @@ Generated Mon Feb  9 19:08:05 2009 by generateDS.py.
 from xml.dom import minidom
 
 
-import indexsuper as supermod
+from breathe.parser.doxygen import indexsuper as supermod
 
 class DoxygenTypeSub(supermod.DoxygenType):
 
@@ -46,9 +44,9 @@ def parse(inFilename):
 
     try:
         doc = minidom.parse(inFilename)
-    except IOError, e:
+    except IOError as e:
         raise ParseError(inFilename)
-       
+
     rootNode = doc.documentElement
     rootObj = supermod.DoxygenType.factory()
     rootObj.build(rootNode)

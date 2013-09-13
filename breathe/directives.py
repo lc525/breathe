@@ -87,14 +87,14 @@ class DoxygenIndexDirective(BaseDirective):
 
         try:
             project_info = self.project_info_factory.create_project_info(self.options)
-        except NoDefaultProjectError, e:
+        except NoDefaultProjectError as e:
             warning = 'doxygenindex: %s' % e
             return [docutils.nodes.warning("", docutils.nodes.paragraph("", "", docutils.nodes.Text(warning))),
                     self.state.document.reporter.warning(warning, line=self.lineno)]
 
         try:
             finder = self.finder_factory.create_finder(project_info)
-        except ParserError, e:
+        except ParserError as e:
             warning = 'doxygenindex: Unable to parse file "%s"' % e
             return [docutils.nodes.warning("", docutils.nodes.paragraph("", "", docutils.nodes.Text(warning))),
                     self.state.document.reporter.warning(warning, line=self.lineno)]
@@ -148,7 +148,7 @@ class DoxygenFunctionDirective(BaseDirective):
 
         try:
             project_info = self.project_info_factory.create_project_info(self.options)
-        except NoDefaultProjectError, e:
+        except NoDefaultProjectError as e:
             warning = 'doxygenfunction: %s' % e
             return [docutils.nodes.warning("", docutils.nodes.paragraph("", "", docutils.nodes.Text(warning))),
                     self.state.document.reporter.warning(warning, line=self.lineno)]
@@ -248,7 +248,7 @@ class DoxygenFunctionDirective(BaseDirective):
                 equal = True
                 for i in range(len(args)):
                     param_type = entry.param[i].type_.content_[0].value
-                    if not isinstance(param_type, unicode) :
+                    if not isinstance(param_type, str) :
                         param_type = param_type.valueOf_
                     if args[i] != param_type:
                         equal = False
@@ -286,7 +286,7 @@ class DoxygenClassDirective(BaseDirective):
 
         try:
             project_info = self.project_info_factory.create_project_info(self.options)
-        except NoDefaultProjectError, e:
+        except NoDefaultProjectError as e:
             warning = 'doxygen%s: %s' % (self.kind, e)
             return [docutils.nodes.warning("", docutils.nodes.paragraph("", "", docutils.nodes.Text(warning))),
                     self.state.document.reporter.warning(warning, line=self.lineno)]
@@ -302,7 +302,7 @@ class DoxygenClassDirective(BaseDirective):
 
         try:
             data_object = finder.find_one(matcher_stack)
-        except NoMatchesError, e:
+        except NoMatchesError as e:
             warning = ('doxygen%s: Cannot find %s "%s" in doxygen xml output for project "%s" from directory: %s'
                     % (self.kind, self.kind, name, project_info.name(), project_info.path()))
             return [docutils.nodes.warning("", docutils.nodes.paragraph("", "", docutils.nodes.Text(warning))),
@@ -349,7 +349,7 @@ class DoxygenFileDirective(BaseDirective):
 
         try:
             project_info = self.project_info_factory.create_project_info(self.options)
-        except NoDefaultProjectError, e:
+        except NoDefaultProjectError as e:
             warning = 'doxygenfile: %s' % e
             return [docutils.nodes.warning("", docutils.nodes.paragraph("", "", docutils.nodes.Text(warning))),
                     self.state.document.reporter.warning(warning, line=self.lineno)]
@@ -419,7 +419,7 @@ class DoxygenBaseDirective(BaseDirective):
 
         try:
             project_info = self.project_info_factory.create_project_info(self.options)
-        except NoDefaultProjectError, e:
+        except NoDefaultProjectError as e:
             warning = 'doxygen%s: %s' % (self.kind, e)
             return [docutils.nodes.warning("", docutils.nodes.paragraph("", "", docutils.nodes.Text(warning))),
                     self.state.document.reporter.warning(warning, line=self.lineno)]
@@ -430,7 +430,7 @@ class DoxygenBaseDirective(BaseDirective):
 
         try:
             data_object = finder.find_one(matcher_stack)
-        except NoMatchesError, e:
+        except NoMatchesError as e:
             display_name = "%s::%s" % (namespace, name) if namespace else name
             warning = ('doxygen%s: Cannot find %s "%s" in doxygen xml output for project "%s" from directory: %s'
                     % (self.kind, self.kind, display_name, project_info.name(), project_info.path()))
@@ -504,7 +504,7 @@ class DoxygenBaseItemDirective(BaseDirective):
 
         try:
             project_info = self.project_info_factory.create_project_info(self.options)
-        except NoDefaultProjectError, e:
+        except NoDefaultProjectError as e:
             warning = 'doxygen%s: %s' % (self.kind, e)
             return [docutils.nodes.warning("", docutils.nodes.paragraph("", "", docutils.nodes.Text(warning))),
                     self.state.document.reporter.warning(warning, line=self.lineno)]
@@ -515,7 +515,7 @@ class DoxygenBaseItemDirective(BaseDirective):
 
         try:
             data_object = finder.find_one(matcher_stack)
-        except NoMatchesError, e:
+        except NoMatchesError as e:
             display_name = "%s::%s" % (namespace, name) if namespace else name
             warning = ('doxygen%s: Cannot find %s "%s" in doxygen xml output for project "%s" from directory: %s'
                     % (self.kind, self.kind, display_name, project_info.name(), project_info.path()))
@@ -710,7 +710,7 @@ class ProjectInfoFactory(object):
             try:
                 path = self.projects[options["project"]]
                 name = options["project"]
-            except KeyError, e:
+            except KeyError as e:
                 sys.stderr.write(
                         "Unable to find project '%s' in breathe_projects dictionary" % options["project"]
                         )
@@ -908,7 +908,7 @@ class FileStateCache(object):
 
         stale = []
 
-        for filename, info in self.app.env.breathe_file_state.iteritems():
+        for filename, info in self.app.env.breathe_file_state.items():
             old_mtime, docnames = info
             if self.mtimer.get_mtime(filename) > old_mtime:
                 stale.extend(docnames)
@@ -922,7 +922,7 @@ class FileStateCache(object):
 
         toremove = []
 
-        for filename, info in self.app.env.breathe_file_state.iteritems():
+        for filename, info in self.app.env.breathe_file_state.items():
 
             _, docnames = info
             docnames.discard(docname)

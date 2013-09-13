@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 #
 # Generated Thu Jun 11 18:43:54 2009 by generateDS.py.
 #
@@ -18,7 +16,7 @@ from xml.dom import Node
 
 try:
     from generatedssuper import GeneratedsSuper
-except ImportError, exp:
+except ImportError as exp:
 
     class GeneratedsSuper:
         def format_string(self, input_data, input_name=''):
@@ -301,7 +299,7 @@ Options:
 """
 
 def usage():
-    print USAGE_TEXT
+    print(USAGE_TEXT)
     sys.exit(1)
 
 

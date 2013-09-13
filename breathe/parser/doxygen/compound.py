@@ -11,8 +11,8 @@ from docutils import nodes
 
 import sys
 
-import compoundsuper as supermod
-from compoundsuper import MixedContainer
+from breathe.parser.doxygen import compoundsuper as supermod
+from breathe.parser.doxygen.compoundsuper import MixedContainer
 
 
 class DoxygenTypeSub(supermod.DoxygenType):
@@ -861,8 +861,8 @@ def parse(inFilename):
 
     try:
         doc = minidom.parse(inFilename)
-    except IOError, e:
-        print e
+    except IOError as e:
+        print(e)
         raise ParseError(inFilename)
        
     rootNode = doc.documentElement

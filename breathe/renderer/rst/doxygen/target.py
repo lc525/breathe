@@ -14,8 +14,8 @@ class TargetHandler(object):
         # Tell the document about our target
         try:
             self.document.note_explicit_target(target)
-        except Exception, e:
-            print "Failed to register id: %s. This is a seemingly harmless bug." % refid
+        except Exception as e:
+          print("Failed to register id: %s. This is a seemingly harmless bug." % refid)
 
         return [target]
 
@@ -33,7 +33,7 @@ class TargetHandlerFactory(object):
 
     def create(self, options, project_info, document):
 
-        if options.has_key("no-link"):
+        if "no-link" in options:
             return NullTargetHandler()
 
         return TargetHandler(project_info, self.node_factory, document)

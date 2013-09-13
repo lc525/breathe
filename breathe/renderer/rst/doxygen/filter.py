@@ -35,11 +35,11 @@ class NodeTypeAccessor(Accessor):
         data_object = self.selecter(parent_data_object, child_data_object)
         try:
             return data_object.node_type
-        except AttributeError, e:
+        except AttributeError as e:
 
             # Horrible hack to silence errors on filtering unicode objects
             # until we fix the parsing
-            if type(data_object) == unicode:
+            if type(data_object) == str:
                 return "unicode"
             else:
                 raise e
@@ -312,7 +312,7 @@ class FilterFactory(object):
 
     def create_outline_filter(self, options):
 
-        if options.has_key("outline"):
+        if "outline" in options:
             return NotFilter(NameFilter(NodeTypeAccessor(Child()), ["description"]))
         else:
             return OpenFilter()

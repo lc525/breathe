@@ -14,7 +14,7 @@ class RstContentCreator(object):
 
     def __call__(self, text):
 
-        # Remove the first line which is "embed:rst[:leading-asterisk]"
+        # Remove the first line
         text = "\n".join(text.split(u"\n")[1:])
 
         # Remove starting whitespace
@@ -40,7 +40,7 @@ class UnicodeRenderer(Renderer):
         #
         if self.data_object.strip():
             return [self.node_factory.Text(self.data_object)]
-        elif self.data_object == unicode(" "):
+        elif self.data_object == str(" "):
             return [self.node_factory.Text(self.data_object)]
         else:
             return []
@@ -103,11 +103,11 @@ class DoxygenToRstRendererFactory(object):
 
         try:
             node_type = data_object.node_type
-        except AttributeError, e:
+        except AttributeError as e:
 
             # Horrible hack to silence errors on filtering unicode objects
             # until we fix the parsing
-            if type(data_object) == unicode:
+            if type(data_object) == str:
                 node_type = "unicode"
             else:
                 raise e
@@ -139,9 +139,9 @@ class DoxygenToRstRendererFactory(object):
             elif data_object.type_ == "subscript":
                 creator = self.node_factory.subscript
             elif data_object.type_ == "center":
-                print "Warning: does not currently handle 'center' text display"
+                print("Warning: does not currently handle 'center' text display")
             elif data_object.type_ == "small":
-                print "Warning: does not currently handle 'small' text display"
+                print("Warning: does not currently handle 'small' text display")
 
             return Renderer(
                     creator,
@@ -273,7 +273,7 @@ class DoxygenToRstRendererFactoryCreator(object):
 
         try:
             node_type = data_object.node_type
-        except AttributeError, e:
+        except AttributeError as e:
 
             # Horrible hack to silence errors on filtering unicode objects
             # until we fix the parsing
@@ -316,11 +316,11 @@ class DoxygenToRstRendererFactoryCreator(object):
 
         try:
             node_type = data_object.node_type
-        except AttributeError, e:
+        except AttributeError as e:
 
             # Horrible hack to silence errors on filtering unicode objects
             # until we fix the parsing
-            if type(data_object) == unicode:
+            if type(data_object) == str:
                 node_type = "unicode"
             else:
                 raise e
